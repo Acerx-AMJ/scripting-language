@@ -1,3 +1,0 @@
-/home/acerxamj/Projects/System/scripting-language/build/CMakeFiles/slang.dir
-/home/acerxamj/Projects/System/scripting-language/build/CMakeFiles/edit_cache.dir
-/home/acerxamj/Projects/System/scripting-language/build/CMakeFiles/rebuild_cache.dir
