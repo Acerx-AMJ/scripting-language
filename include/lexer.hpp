@@ -1,0 +1,32 @@
+#ifndef LEXER_H
+#define LEXER_H
+
+#include "catcher.hpp"
+#include "tokens.hpp"
+
+class Lexer
+{
+public:
+   Lexer(Catcher& catcher, std::string& string);
+   ~Lexer() = default;
+
+   std::vector<Token>& tokenize();
+
+private:
+   Catcher& catcher;
+   std::string& source;
+   std::vector<Token> tokens;
+   size_t index = 0;
+   size_t size = 0;
+
+   void push_token(TType type, const std::string& lexeme);
+   void push_token_ad(TType type, const std::string& lexeme);
+   void push_token_ad2(TType type, const std::string& lexeme);
+
+   char advance();
+   char peek() const;
+   char peek2()  const;
+   char prev() const;
+};
+
+#endif // LEXER_H

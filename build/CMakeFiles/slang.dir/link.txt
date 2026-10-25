@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/slang.dir/link.d CMakeFiles/slang.dir/src/args.cpp.o CMakeFiles/slang.dir/src/ast.cpp.o CMakeFiles/slang.dir/src/catcher.cpp.o CMakeFiles/slang.dir/src/files.cpp.o CMakeFiles/slang.dir/src/lexer.cpp.o CMakeFiles/slang.dir/src/main.cpp.o CMakeFiles/slang.dir/src/parser.cpp.o CMakeFiles/slang.dir/src/preprocessor.cpp.o -o slang

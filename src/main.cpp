@@ -1,11 +1,11 @@
-#include "config/version.hpp"
-#include "errors/catcher.hpp"
-#include "errors/errors.hpp"
-#include "lexer/lexer.hpp"
-#include "parser/parser.hpp"
-#include "preprocessor/preprocessor.hpp"
-#include "io/files.hpp"
-#include "io/args.hpp"
+#include "version.hpp"
+#include "catcher.hpp"
+#include "errors.hpp"
+#include "lexer.hpp"
+#include "parser.hpp"
+#include "preprocessor.hpp"
+#include "files.hpp"
+#include "args.hpp"
 #include <iostream>
 
 int main()
@@ -188,7 +188,7 @@ int main()
             continue;
          
          Parser parser (catcher, tokens);
-         auto& program = parser.parse();
+         parser.parse();
 
          if (catcher.display())
             continue;
